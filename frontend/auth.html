@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Art Deco Auth</title>
+        <link rel="stylesheet" href="auth.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <form class="registration-form">
+                <h1>Register</h1>
+                <input type="text" placeholder="Full Name" id="name" required/>
+                <input type="email" placeholder="Email" id="email" required/>
+                <input type="password" placeholder="Password" id="password" required/>
+                <button>Register</button>
+                <p class="status-message"></p>
+
+                <div class="switch">
+                    <a href="#">Already have an account? Log in here</a>
+                </div>
+            </form>
+
+            <form class="login-form hide">
+                <h1>Log in</h1>
+                <input type="email" placeholder="Email" id="loginEmail" required/>
+                <input type="password" placeholder="Password" id="loginPassword" required/>
+                <button>Log in</button>
+                <p class="status-message"></p>
+
+                <div class="switch">
+                    <a href="#">Don't have an account? Register here</a>
+                </div>
+            </form>
+
+            <div class="loader hide">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <script src="auth.js"></script>
+    </body>
+</html>
